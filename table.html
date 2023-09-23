@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en"translate="no">
+  <head>
+  <title>Creating table in HTML</title>
+       <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="We are a website dedicated to helping people learn and master the art of web development.">
+
+    <meta name="author" content="Dr.Afkar Ahmad">
+
+   
+  <meta name="theme-color" content="#6c999d">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="style-b.css">
+
+  <link rel="stylesheet" href="nav_style.css">
+  
+  <link rel="stylesheet"href="loading.css">
+
+  
+  <link rel="icon" href="icon.png">
+  
+  
+  </head>    
+  <body>
+
+
+
+<div class="page"id="page">
+
+<br/>
+<h2>Creating table in HTML:</h2>
+<p>
+An HTML table is like a grid used on websites to organize and display information in rows and columns, similar to a spreadsheet. It's made up of elements like &lt;table&gt; for the overall structure, &lt;tr&gt; for rows, and &lt;td&gt; or &lt;th&gt; for cells. You can put text, images, or other content in these cells to create structured layouts for data or content presentation on a web page.
+<br/>
+<br/>
+<b>Example:</b>
+<div class="output">
+
+
+<table border="1"bgcolor="#f0f0f0">
+    <caption>Employee Information</caption>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>HR</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jane Smith</td>
+            <td>Marketing</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Robert Johnson</td>
+            <td>Finance</td>
+        </tr>
+    </tbody>
+</table>
+
+
+</div>
+</p> 
+
+<h3>How to create html table?</h3>
+
+<p>
+<b>Step 1:</b> Start with the Table Element Begin by opening a set of tags to create the table itself. Use the &lt;table&gt; element to do this. It's the container for the entire table.
+
+<div class="code"><pre>
+
+&lt;table&gt;
+<span class="comment">  &lt;!-- Your table content will go here --&gt;
+</span>&lt;/table&gt;
+</pre>
+</div>
+
+<b>Step 2:</b> Add Table Rows Inside the &lt;table&gt; element, you need to create rows. Each row is defined using the &lt;tr&gt;(table row) element. Rows are the horizontal sections of the table where your data will reside.
+
+<div class="code"><pre>
+
+&lt;table&gt;
+  &lt;tr&gt;
+  <span class="comment"> &lt;!-- Cells (data) will go here --&gt;</span>
+  
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    <span class="comment"> &lt;!-- Another row --&gt;
+</span>
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+</div>
+
+<b>Step 3:</b> Define Table Headings (Optional) In many cases, the first row of your table is used for headings. You can mark them using the &lt;th&gt; (table header) element. This makes the text bold and centered by default, distinguishing it from regular cell data.
+
+<div class="code"><pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+ <span class="comment">    &lt;!-- Data rows go here --&gt;</span>
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+</div>
+
+<b>Step 4:</b> Populate Cells Within each row, you'll add cells using the &lt;td&gt; (table data) element. These cells contain your actual data.
+<div class="code"><pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 3&lt;/td&gt;
+    &lt;td&gt;Data 4&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+</div>
+
+<b>Step 5:</b> Style and Format (Optional) You can style your table using CSS to control things like colors, borders, and spacing. CSS allows you to make your table visually appealing and match the design of your website.
+<br/>
+<br/>
+<b>Step 6:</b> Close the Table Don't forget to close the &lt;table&gt; element when you're done defining your table and its content.
+<div class="code"><pre>
+&lt;table&gt;
+ <span class="comment"> &lt;!-- Table content --&gt;</span>
+&lt;/table&gt;
+</pre>
+</div>
+This is the basic structure of an HTML table. You can add more rows and cells as needed for your data. HTML tables are versatile and can be customized further to suit your specific requirements.
+</p> 
+
+<h3>Some attributes of &lt;table&gt; element:</h3>
+<p>
+
+<b>1.border:</b> Specifies the width of the border around the table and its cells.
+
+<div class="code">
+<pre>
+&lt;table border="1"&gt;
+<span class="comment">&lt;!-- Table content goes here --&gt;</span>
+&lt;/table&gt;
+</pre>
+</div>
+
+<b>2.width:</b> Sets the width of the table (in pixels or percentage).
+<div class="code">
+<pre>
+&lt;table width="100%"&gt;
+<span class="comment">&lt;!-- Table content goes here --&gt;</span>
+&lt;/table&gt;
+</pre>
+</div>
+
+<b>3.cellpadding:</b> Adds space (padding) inside the table cells.
+<div class="code">
+<pre>
+&lt;table cellpadding="5"&gt;
+<span class="comment">&lt;!-- Table content goes here --&gt;</span>
+&lt;/table&gt;
+</div>
+<b>4.cellspacing:</b> Specifies the space between table cells.
+<div class="code">
+<pre>
+&lt;table cellspacing="2"&gt;
+ <span class="comment">&lt;!-- Table content goes here --&gt;
+ </span>
+&lt;/table&gt;
+</pre>
+</div>
+
+<b>5.summary:</b> Provides a brief description or summary of the table's content for accessibility.
+<div class="code">
+<pre>
+&lt;table summary="This table displays sales data for the past year"&gt;
+ <span class="comment">&lt;!-- Table content goes here --&gt;
+ </span>
+&lt;/table&gt;
+
+</pre>
+</div>
+<b>6.align:</b> Aligns the table horizontally within its containing element.
+<div class="code">
+<pre>
+&lt;table align="center"&gt;
+ <span class="comment">&lt;!-- Table content goes here --&gt;</span>
+&lt;/table&gt;
+
+</pre>
+</div>
+
+<b>7.bgcolor:</b> Sets the background color of the table.
+<div class="code">
+<pre>
+
+&lt;table bgcolor="#FFFF00"&gt;
+  <span class="comment">&lt;!-- Table content goes here --&gt;</span>
+&lt;/table&gt;
+</pre>
+</div>
+
+<b>8.bordercolor:</b> Specifies the color of the table's border.
+<div class="code">
+<pre>
+
+&lt;table bordercolor="#000000"&gt;
+  <span class="comment">&lt;!-- Table content goes here --&gt;
+  </span>
+&lt;/table&gt;
+</div>
+
+<b>9.frame:</b> Defines which parts of the table's borders should be displayed.
+<div class="code">
+<pre>
+
+&lt;table frame="hsides"&gt;
+  <span class="comment">&lt;!-- Table content goes here --&gt;
+  </span>
+&lt;/table&gt;
+</pre>
+</div>
+
+<b>10.rules:</b> Specifies how the table's internal grid lines should be displayed.
+<div class="code">
+<pre>
+
+&lt;table rules="all"&gt;
+  <span class="comment">&lt;!-- Table content goes here --&gt;
+  </span>
+&lt;/table&gt;
+</pre>
+</div>
+
+</p>
+
+   <div class="nextsec">
+   <h4>5/8</h4>
+
+<a href="addmedia.html">   
+   <button>Next »</button></a>
+   </div>
+   
+   
+   
+
+
+
+
+
+
+</div>
+<!--End of page-->
+<div class="footer">
+&copy;2023 CODEAFKAR,All Rights Reserved 
+</div>   
+   
+   
+
+
+
+
+
+<button class="searchbtn"onclick="popupScreen();">
+<i class="fa fa-plus fa-2x"style="color:#fff;">
+</i>
+</button>
+
+<div class="popup-b"id="id01">
+<div class="popup-topics">
+<h2>Choose Topics</h2>
+<hr/>
+<div class="popup-overflow">
+<a href="html.html"><button class="topic_btn">Basic structure of HTML</button></a>
+
+<a href="tags.html"><button class="topic_btn">HTML tags and attributes</button></a>
+
+
+<a href="sometag.html"><button class="topic_btn">Some HTML elements </button></a>
+
+<a href="frmttxt.html"><button class="topic_btn">Formatting text in HTML</button></a>
+
+
+
+<a href="table.html"><button class="topic_btn">Creating table in HTML</button></a>
+
+
+
+<a href="addmedia.html"><button class="topic_btn">Adding media to HTML</button></a>
+
+
+<a href="list.html"><button class="topic_btn">Creating list in HTML</button></a>
+
+
+
+<a href="formtag.html"><button class="topic_btn">Forms and input</button></a>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+      <nav>
+
+<a href="index.html">
+
+<i class="fa fa-home fa-2x"style="margin-top:14px;
+margin-left:10px;color:#fff;"></i>
+</a>
+<img src="logo.png"class="logo"id="logo"/>
+
+<input type="text"class="searchbar"id="search"placeholder="Search..."
+oninput="scrollToText(this.value);"/>
+
+
+<i class="fa fa-search"id="searchbtn"onclick="shwSrch();"></i>
+
+    </nav>
+
+
+
+</div>
+
+
+
+
+<div class="loadingdiv"id="loader">
+<center>
+<div class="loader">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="nav_script.js"></script>
+
+<script src="script.js">
+</script>
+
+
+
+
+  </body>
+
+</html>
+

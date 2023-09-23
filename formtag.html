@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en"translate="no">
+  <head>
+  <title>Creating form in HTML</title>
+       <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="We are a website dedicated to helping people learn and master the art of web development.">
+
+    <meta name="author" content="Dr.Afkar Ahmad">
+
+   
+  <meta name="theme-color" content="#6c999d">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet"href="style.css">
+  
+  <link rel="stylesheet"href="style-b.css">
+
+  <link rel="stylesheet"href="nav_style.css">
+  
+  <link rel="stylesheet"href="loading.css">
+
+  
+  <link rel="icon" href="icon.png">
+  
+  
+  </head>    
+  <body>
+
+
+
+<div class="page"id="page">
+
+<br/>
+<h2>Form and input:</h2>
+<p>
+HTML (Hypertext Markup Language) is the standard markup language for creating web pages. In HTML, "form" is an essential element that allows users to input data and interact with a website.
+</p>
+<h3>Creating form:</h3>
+
+<p>
+In HTML (Hypertext Markup Language), "form" is a crucial element used to create interactive input fields and gather user data on webpages. Forms are the foundation of many online interactions, such as user registration, login, search bars, and contact forms. They enable users to submit data to a server for processing or storage.
+<br/>
+<br/>
+
+Here are some key points about forms in HTML:
+<br/>
+<br/>
+
+
+&lt;form&gt; Element: You define a form using the &lt;form&gt; element. It acts as a container for various input elements like text fields, radio buttons, checkboxes, and buttons.
+<br/>
+<br/>
+
+Input Fields: Within a form, you can include input fields using elements like &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt;. Each input field has a unique purpose, such as text input, password input, or selecting options from a dropdown.
+<br/>
+<br/>
+
+&lt;label&gt; Element: Labels are used to describe the purpose of an input field. They are associated with their corresponding input elements using the for attribute or by nesting the input element inside the &lt;label&gt; element.
+<br/>
+<br/>
+
+Submit Button: A form typically includes a submit button ( &lt;button&gt; or &lt;input type="submit"&gt;) that users click to send the form data to the server for processing.
+<br/>
+<br/>
+
+Form Attributes: Forms can have various attributes, such as action (specifying the server-side script to handle form data), method (specifying how data is sent, typically GET or POST), and enctype (specifying the encoding type for file uploads).
+<br/>
+<br/>
+
+Example of a simple HTML form:
+<div class="code">
+<pre>
+
+&lt;form action="/submit" method="POST"&gt;
+  &lt;label for="username"&gt;Username:&lt;/label&gt;
+  &lt;input type="text" id="username" name="username" required&gt;
+  
+  &lt;label for="password"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="password" name="password" required&gt;
+  
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+</pre>
+</div>
+<div class="r_texts">
+Forms are a fundamental part of web development, allowing websites to collect user data, validate inputs, and provide interactive experiences. They can be customized with CSS and enhanced with JavaScript for a richer user experience.
+</div>
+</p>
+<h3>Input Element:</h3>
+<p>
+HTML provides a robust set of elements to create web forms, allowing users to input various types of data. The foundation of form creation lies in the &lt;input&gt; element, which is incredibly versatile and can be customized through various attributes.
+
+<br/>
+<br/>
+
+The &lt;input&gt; element is used to create interactive form controls on web pages. These controls serve different purposes and collect various types of data, enhancing user interaction and data collection on websites. Let's explore the &lt;input&gt; element in detail and its extensive range of types.
+
+<br/>
+<br/>
+
+Basic Structure of the &lt;input&gt; Element:
+<br/>
+<br/>
+
+The &lt;input&gt; element is a self-closing tag, meaning it doesn't require a closing &lt;/input&gt; tag. It's used within a &lt;form&gt; element, which acts as a container for the input elements. Here's a basic structure of an &lt;input&gt; element:
+
+<br/>
+<br/>
+
+&lt;input type="text" name="username" id="username" value="" /&gt;
+
+<br/>
+<br/>
+
+Now, let's delve into the attributes and types of the &lt;input&gt; element.
+<br/>
+<br/>
+
+
+Common Attributes of the &lt;input&gt; Element
+<br/>
+<br/>
+
+1.type (Required): The type attribute specifies the type of input control to be displayed. This attribute is essential, and its value determines how the input behaves. Here are some common types:
+<br/>
+<br/>
+<ul>
+<li>
+text: Creates a single-line text input.
+</li>
+<br/>
+<br/>
+<li>
+password: Creates a password input, obscuring the entered characters.
+</li>
+<br/>
+<br/>
+<li>
+email: Validates input as an email address.</li><br/>
+<br/>
+
+
+
+<li>number: Allows numeric input.</li>
+<br/>
+<br/>
+
+
+<li>date: Allows the selection of a date.</li>
+<br/>
+<br/>
+
+
+<li>radio: Creates a radio button for selecting one option from a group.</li>
+
+<br/>
+<br/>
+
+<li>checkbox: Creates a checkbox for binary choices.</li>
+<br/>
+<br/>
+
+
+<li>file: Enables file uploads.</li>
+<br/>
+<br/>
+
+
+<li>submit: Submits the form data.</li>
+<br/>
+<br/>
+
+
+<li>button: A generic button without a predefined function.</li>
+
+<br/>
+<br/>
+
+<li>reset: Resets the form to its initial state.</li>
+
+<br/>
+<br/>
+
+</ul>
+
+  2.name (Required): The name attribute defines the name for the input control.
+It's used when the form data is submitted to identify the data associated with this input.
+<br/>
+<br/>
+
+3.id (Optional): The id attribute provides a unique identifier for the input element. It is mainly used for associating labels with inputs and for scripting purposes.
+<br/>
+<br/>
+
+4.value (Optional): The value attribute sets the initial or default value for the input. For example, you can pre-fill a text field with a default value.
+<br/>
+<br/>
+
+5.placeholder (Optional): The placeholder attribute displays a hint or example text within the input field to guide users on what to enter.
+<br/>
+<br/>
+
+6.required (Optional): When the required attribute is present, it makes the input field mandatory, and the user must provide a value before submitting the form.
+<br/>
+<br/>
+
+<h3>Types of &lt;input&gt; Elements:</h3>
+
+Now, let's explore 30 different types of input elements and their use cases:
+<br/>
+<br/>
+
+<h2>HTML Input Types</h2>
+
+<table class="input_types">
+    <tr>
+        <th>Input Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>&lt;input type="text"></td>
+        <td>Creates a single-line text input where users can enter alphanumeric characters.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="password"></td>
+        <td>Used for secure password entry, obscuring the characters as dots or asterisks.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="email"></td>
+        <td>Validates that the user's input is a valid email address.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="number"></td>
+        <td>Restricts input to numeric values and may include up and down arrows for value adjustment.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="date"></td>
+        <td>Provides a date picker for selecting a date.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="time"></td>
+        <td>Allows users to input a time value.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="url"></td>
+        <td>Ensures that the user's input is a valid URL.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="search"></td>
+        <td>Designed for search queries and may include a clear button.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="color"></td>
+        <td>Provides a color picker to select a color.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="tel"></td>
+        <td>Used for telephone number input.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="range"></td>
+        <td>Creates a slider control for selecting a value within a range.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="radio"></td>
+        <td>Creates a set of radio buttons where users can select one option from a group.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="checkbox"></td>
+        <td>Allows users to make binary choices, and multiple checkboxes can be selected.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="file"></td>
+        <td>Enables users to upload files to the server.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="submit"></td>
+        <td>Creates a button that submits the form data to the server.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="reset"></td>
+        <td>Resets the form to its initial state, clearing all user inputs.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="button"></td>
+        <td>A generic button that can be scripted to perform various actions.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="image"></td>
+        <td>Displays an image as a clickable button.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="hidden"></td>
+        <td>Not visible to users but can carry data to the server.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="month"></td>
+        <td>Allows users to select a month and year.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="week"></td>
+        <td>Enables the selection of a week and year.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="datetime"></td>
+        <td>Allows users to input both date and time.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="datetime-local"></td>
+        <td>Captures date and time without timezone information.</td>
+    </tr>
+    <tr>
+        <td>&lt;input type="search"></td>
+        <td>Tailored for search queries, often featuring a clear button for input erasure.</td>
+    </tr>
+</table>
+
+
+Each of these input types serves a specific purpose, enhancing user experience and data accuracy in web forms. By understanding the attributes and types of the &lt;input&gt; element, web developers can create user-friendly and functional forms to collect a wide range of data from their audience.
+</p>
+
+
+
+
+
+   <div class="nextsec">
+   <h4>8/8</h4>
+
+<a href="css.html">   
+   <button>Learn CSS</button></a>
+   </div>
+   
+   
+   
+
+
+
+
+
+
+</div>
+<!--End of page-->
+<div class="footer">
+&copy;2023 CODEAFKAR,All Rights Reserved 
+</div>   
+   
+   
+
+
+
+
+
+<button class="searchbtn"onclick="popupScreen();">
+<i class="fa fa-plus fa-2x"style="color:#fff;">
+</i>
+</button>
+
+<div class="popup-b"id="id01">
+<div class="popup-topics">
+<h2>Choose Topics</h2>
+<hr/>
+<div class="popup-overflow">
+<a href="html.html"><button class="topic_btn">Basic structure of HTML</button></a>
+
+<a href="tags.html"><button class="topic_btn">HTML tags and attributes</button></a>
+
+
+<a href="sometag.html"><button class="topic_btn">Some HTML elements </button></a>
+
+<a href="frmttxt.html"><button class="topic_btn">Formatting text in HTML</button></a>
+
+
+
+<a href="table.html"><button class="topic_btn">Creating table in HTML</button></a>
+
+
+
+<a href="addmedia.html"><button class="topic_btn">Adding media to HTML</button></a>
+
+
+<a href="list.html"><button class="topic_btn">Creating list in HTML</button></a>
+
+
+
+<a href="formtag.html"><button class="topic_btn">Forms and input</button></a>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+      <nav>
+
+<a href="index.html">
+
+<i class="fa fa-home fa-2x"style="margin-top:14px;
+margin-left:10px;color:#fff;"></i>
+</a>
+<img src="logo.png"class="logo"id="logo"/>
+
+<input type="text"class="searchbar"id="search"placeholder="Search..."
+oninput="scrollToText(this.value);"/>
+
+
+<i class="fa fa-search"id="searchbtn"onclick="shwSrch();"></i>
+
+    </nav>
+
+
+
+</div>
+
+
+
+
+<div class="loadingdiv"id="loader">
+<center>
+<div class="loader">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="nav_script.js"></script>
+
+<script src="script.js">
+</script>
+
+
+
+
+  </body>
+
+</html>
+

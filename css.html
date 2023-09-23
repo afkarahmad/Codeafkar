@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en"translate="no">
+  <head>
+  <title>Learn CSS</title>
+       <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="We are a website dedicated to helping people learn and master the art of web development. Our platform offers comprehensive tutorials on HTML, CSS, and JavaScript, providing you with the necessary knowledge to build stunning websites.">
+
+    <meta name="author" content="Dr.Afkar Ahmad">
+
+   
+  <meta name="theme-color" content="#6c999d">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="style-b.css">
+
+  <link rel="stylesheet" href="nav_style.css">
+  
+  <link rel="stylesheet"href="loading.css">
+
+  
+  <link rel="icon" href="icon.png">
+  
+  
+  </head>    
+  <body>
+
+
+
+<div class="page"id="page">
+
+<br/>
+<h3>Introduction to CSS?</h3>
+<p>
+Cascading Style Sheets (CSS) is a vital web development technology. It separates content (HTML) from presentation, enabling precise control over a website's visual design. CSS utilizes selectors to target HTML elements and assigns properties with values to define styling. By applying CSS rules, developers create consistent, responsive, and accessible web layouts. Its history dates back to the late 1990s when it addressed the complexity of web page design. With CSS, designers can ensure a unified look, adapt designs to various screens, and enhance accessibility. CSS is an indispensable tool in modern web development, essential for creating appealing and user-friendly websites.</p>
+
+<h3>What is CSS?</h3>
+<p>
+CSS, which stands for Cascading Style Sheets, is a stylesheet language used in web development to control the visual presentation and formatting of HTML documents. It defines how elements within a webpage should appear, including details like colors, fonts, spacing, and layout. CSS is essential for creating attractive, consistent, and user-friendly web designs.
+
+<br/>
+<br/>
+
+<b>There are three main types of CSS:
+</b>
+<br/>
+<br/>
+
+<b>Inline CSS:</b> Inline CSS is applied directly within the HTML document, using the style attribute on individual HTML elements. It has the highest specificity, meaning it overrides other CSS styles. Here's an example:
+<div class="code">
+<pre>
+&lt;p style="color: blue; font-size: 16px;"&gt;This is a blue, 16px font-size paragraph.&lt;/p&gt;
+</pre>
+</div>
+
+<b>Internal (or Embedded) CSS:</b>
+ Internal CSS is placed within the &lt;style&gt; element in the &lt;head&gt; section of an HTML document. It affects the styling of elements on that specific page. Here's an example:
+ 
+ <div class="code">
+ <pre>
+ 
+ &lt;head&gt;
+  &lt;style&gt;
+    p {
+      color: red;
+      font-size: 18px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;This is a red, 18px font-size paragraph.&lt;/p&gt;
+&lt;/body&gt;
+</pre>
+</div>
+
+<b>External CSS:</b> External CSS is defined in a separate .css file and linked to an HTML document using the &lt;link&gt; element. It allows for the consistent styling of multiple web pages by reusing the same stylesheet. Here's an example:
+<div class="code">
+<pre>
+<span class="comment">
+
+&lt;!-- In the HTML file --&gt;
+
+</span>
+&lt;head&gt;
+  &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;This is a paragraph with styles from an external CSS file.&lt;/p&gt;
+&lt;/body&gt;
+</pre>
+</div>
+<div class="code">
+<pre>
+/* In the styles.css file */
+p {
+  color: green;
+  font-size: 20px;
+}
+</pre>
+</div>
+
+In summary, CSS is a crucial technology in web development that allows developers to style web content. It comes in three main types: Inline, Internal, and External CSS, each with its own use cases. Choosing the appropriate type depends on the project's needs and organization, with external CSS being the most commonly used for maintaining consistency across multiple web pages.
+
+
+
+</p>
+
+<h3>How to add comment </h3>
+<p>
+
+In CSS,comments are used to add explanatory notes or annotations within your code that are not interpreted or displayed by the web browser. This can be helpful for documenting your CSS code for yourself or other developers who may work on the same project. There are two ways to add comments in CSS:Single-line comments: To add a single-line comment in CSS, you can use the /* and */ notation. Anything placed between these characters will be treated as a comment and will not affect the styling of your web page. Here's an example:
+<div class="code">
+<pre>
+<span class="comment">
+/* This is a single-line comment */
+</span>
+body {
+    background-color: #ffffff;
+}</pre>
+</div>
+
+Multi-line comments: Multi-line comments are used when you want to add comments that span multiple lines. They start with /* and end with */, just like single-line comments. Here's an example:
+<div class="code">
+<pre>
+<span class="comment">
+/*
+This is a multi-line comment.
+You can use it to provide detailed explanations or notes about your CSS code.
+*/
+</span>
+body {
+    font-family: Arial, sans-serif;
+}
+</pre>
+</div>
+
+<div class="r_texts">
+Comments in CSS are not displayed on the web page and are purely for documentation and readability purposes. They can be especially useful when you have complex or lengthy CSS rules and you want to explain their purpose or usage.
+</div>
+</p>
+
+
+
+   <div class="nextsec">
+   <h4>1/5</h4>
+
+<a href="css-b.html">   
+   <button>Next »</button></a>
+   </div>
+   
+   
+   
+
+
+
+
+
+
+</div>
+<!--End of page-->
+<div class="footer">
+&copy;2023 CODEAFKAR,All Rights Reserved 
+</div>   
+   
+   
+
+
+
+
+
+<button class="searchbtn"onclick="popupScreen();">
+<i class="fa fa-plus fa-2x"style="color:#fff;">
+</i>
+</button>
+
+<div class="popup-b"id="id01">
+<div class="popup-topics">
+<h2>Choose Topics</h2>
+<hr/>
+<div class="popup-overflow">
+<a href="css.html"><button class="topic_btn">Introduction to CSS</button></a>
+
+<a href="css-b.html"><button class="topic_btn">CSS Styling Fundamentals.</button></a>
+
+
+<a href="css-c.html"><button class="topic_btn"> Some properties and values of css</button></a>
+
+
+
+<a href="css-d.html"><button class="topic_btn">Responsive web design with CSS</button></a>
+
+
+
+<a href="css-e.html"><button class="topic_btn">Making animation with CSS</button></a>
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+      <nav>
+
+<a href="index.html">
+
+<i class="fa fa-home fa-2x"style="margin-top:14px;
+margin-left:10px;color:#fff;"></i>
+</a>
+<img src="logo.png"class="logo"id="logo"/>
+
+<input type="text"class="searchbar"id="search"placeholder="Search..."
+oninput="scrollToText(this.value);"/>
+
+
+<i class="fa fa-search"id="searchbtn"onclick="shwSrch();"></i>
+
+    </nav>
+
+
+
+</div>
+
+
+
+
+<div class="loadingdiv"id="loader">
+<center>
+<div class="loader">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="nav_script.js"></script>
+
+<script src="script.js">
+</script>
+
+
+
+
+  </body>
+
+</html>
+

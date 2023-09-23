@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en"translate="no">
+  <head>
+  <title>CSS Fundamentals</title>
+       <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="We are a website dedicated to helping people learn and master the art of web development. Our platform offers comprehensive tutorials on HTML, CSS, and JavaScript, providing you with the necessary knowledge to build stunning websites.">
+
+    <meta name="author" content="Dr.Afkar Ahmad">
+
+   
+  <meta name="theme-color" content="#6c999d">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="style-b.css">
+
+  <link rel="stylesheet" href="nav_style.css">
+  
+  <link rel="stylesheet"href="loading.css">
+
+  
+  <link rel="icon" href="icon.png">
+  
+  
+  </head>    
+  <body>
+
+
+
+<div class="page"id="page">
+
+<br/>
+<h2>Selectors in CSS</h2>
+<p>A CSS selector is a fundamental concept in web development that allows you to target and style specific HTML elements on a web page. It's a crucial part of cascading style sheets (CSS), which are used to control the visual presentation of web content. CSS selectors are used to define which HTML elements should receive particular styles, such as colors, fonts, sizes, margins, and more. In this essay, we'll explore CSS selectors in detail, covering their types, usage, and some advanced techniques.
+<h4> Understanding Selector:</h4>
+
+At its core, a CSS selector is a pattern that matches one or more elements in an HTML document. It tells the browser which HTML elements should be affected by the rules defined in a CSS stylesheet. Selectors are used in conjunction with CSS properties and values to specify how elements should be styled.
+</p>
+
+<h3>Basic selectors</h3>
+<p>
+<h4>Element Selector:</h4> The most straightforward selector targets all instances of a specific HTML element. For example, p selects all paragraph elements, and any styling rules applied to it will affect every paragraph on the page.
+<br/>
+<br/>
+<b>Example:</b>
+<div class="code">
+<pre>
+p {
+  font-size: 16px;
+  color: #333;
+}
+</pre>
+</div>
+In this example, all &lt;p&gt; elements on the webpage will have a font size of 16 pixels and a color of dark gray (#333).
+
+<h4>Class Selector:</h4> A class selector begins with a dot (.) followed by the class name. It allows you to select HTML elements that have a specific class attribute. For instance, .highlight targets all elements with the class "highlight."
+<br/>
+<br/>
+Suppose you have the following HTML:
+<div class="code">
+<pre>
+
+&lt;p class="highlight"&gt;This is a highlighted paragraph.&lt;/p&gt;
+</pre>
+
+</div>
+You can style it with a class selector like this:
+
+<div class="code">
+<pre>
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+</pre>
+</div>
+
+This CSS rule will make any element with the class "highlight" have a yellow background and bold text.
+
+<h4>ID Selector:</h4>
+An ID selector starts with a hash (#) followed by the ID attribute's value. It selects a single HTML element with the specified ID. For example, #header targets the element with the ID "header."
+in HTML:
+
+<div class="code">
+<pre>
+&lt;div id="header"&gt;This is the header.
+&lt;/div&gt;
+</pre>
+</div>
+
+You can style it using an ID selector like this:
+<div class="code">
+<pre>
+#header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+}
+</pre>
+</div>
+This CSS rule will give the element with the ID "header" a blue background, white text, and some padding.
+
+
+</p>
+<h4>Combining Selectors:</h4>
+<p>
+You can combine multiple selectors to create more specific rules. This is done by listing the selectors together without spaces or by separating them with spaces to target nested elements. For instance:
+<div class="output">
+<ul>
+<li>
+<span class="r_tag"><i>h1.special</i>
+</span> selects all &lt;h1&gt; elements with the class <span class="r_tag"><i>"special."</i>
+</span></li>
+<br/>
+<br/>
+<li>
+<span class="r_tag"><i>ul li</i> </span>selects all &lt;li&gt; elements that are descendants of a <i>&lt;ul&gt;</i> element.
+</li>
+</ul>
+</div>
+
+</p>
+
+<h4>Pseudo-classes and Pseudo-elements:</h4>
+<p>
+Pseudo-classes and pseudo-elements allow you to select elements based on their state or position within the document. Some common examples include:
+<div class="output">
+<b>:hover</b>: Selects an element when the mouse pointer is over it.
+<br/>
+<br/>
+<b>.active</b>: Selects an element when the mouse clicks on it.
+<br/>
+<br/>
+<b>:first-child</b>: Selects the first child element of its parent.
+
+<br/>
+<br/>
+<b>::before</b> and <b>::after</b>: Selects and styles content before or after an element's content.
+
+</div>
+<div class="code">
+<pre>
+&lt;style&gt;
+button:hover{
+    background:red;
+    font-weight:bold;
+    border:0;
+}
+
+&lt;/style&gt;
+</pre>
+</div>
+</p>
+<h4>Attribute Selectors:</h4>
+<p>
+Attribute selectors enable you to target elements based on their attributes. For instance:
+<div class="output">
+<b>[type="text"]</b> selects all elements with a "type" attribute set to "text."
+<br/>
+<br/>
+<b>[href^="https://"]</b> 
+selects all elements with an "href" attribute that starts with "https://."
+</div>
+<div class="code">
+<pre>
+
+&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+  &lt;style&gt;
+  
+  a[href^="https://google.com"]:hover{
+      background:black;
+      color:white;
+  }
+  
+  
+  a[href^="https://youtube.com"]:hover{
+      background:red;
+      color:white;
+      font-weight:bold;
+  }
+  
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;h1&gt; Welcome to my webpage&lt;/h1&gt;
+  &lt;p&gt;Click these&lt;/p&gt;
+  &lt;a href="https://youtube.com"&gt;Open youtube&lt;/a&gt;
+  
+ &lt;a href="https://google.com"&gt;Open Google&lt;/a&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;  
+
+
+
+
+</pre>
+</div>
+</p>
+
+<h4>Descendant and Child Selectors</h4>
+<p>Selectors can be used to target elements based on their relationship with other elements in the HTML structure:
+<br/>
+<b>A B</b>: Selects all elements of type B that are descendants of an element of type A.A > B: Selects all elements of type B that are a direct child of an element of type A.
+
+</p>
+<h2>CSS Properties</h2>
+
+<p>A CSS property is an attribute that you can apply to HTML elements to define their visual presentation. Each CSS property specifies a particular aspect of an element's style, such as its color, size, position, or behavior.
+<br/>
+<br/>
+A CSS property consists of two parts:
+<br/>
+<br/>
+
+<b>1.Property Name:</b> This is the attribute you want to modify, like "color," "font-size," "background-color," or "margin."
+<br/>
+<br/>
+<b>2.Property Value:</b> This is the value you assign to the property, indicating how you want the property to affect the element. For example, for the "color" property, the value could be "red," "blue," or "#FFA500" (a hexadecimal color code).
+<br/>
+<br/>
+
+Here's a simple example of a CSS rule that sets the color and font size properties for a heading element:
+<div class="code">
+<pre>
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+</pre>
+</div>
+In this example:"h1" is the HTML element selector, specifying that the styles should apply to all &lt;h1&gt; elements.
+"color" is a CSS property, and "blue" is the property value, indicating that the text color should be blue."font-size" is another CSS property, and "24px" is the property value, setting the font size to 24 pixels.CSS properties and values allow you to control the visual presentation of web content, making it an essential part of web design and layout.
+</p>
+
+   <div class="nextsec">
+   <h4>2/5</h4>
+
+<a href="css-c.html">   
+   <button>Next »</button></a>
+   </div>
+   
+   
+   
+
+
+
+
+
+
+</div>
+<!--End of page-->
+<div class="footer">
+&copy;2023 CODEAFKAR,All Rights Reserved 
+</div>   
+   
+   
+
+
+
+
+
+<button class="searchbtn"onclick="popupScreen();">
+<i class="fa fa-plus fa-2x"style="color:#fff;">
+</i>
+</button>
+
+<div class="popup-b"id="id01">
+<div class="popup-topics">
+<h2>Choose Topics</h2>
+<hr/>
+<div class="popup-overflow">
+<a href="css.html"><button class="topic_btn">Introduction to CSS</button></a>
+
+<a href="css-b.html"><button class="topic_btn">CSS Styling Fundamentals.</button></a>
+
+
+<a href="css-c.html"><button class="topic_btn"> Some properties and values of css</button></a>
+
+
+<a href="css-d.html"><button class="topic_btn">Responsive web design with CSS</button></a>
+
+
+
+<a href="css-e.html"><button class="topic_btn">Making animation with CSS</button></a>
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+      <nav>
+
+<a href="index.html">
+
+<i class="fa fa-home fa-2x"style="margin-top:14px;
+margin-left:10px;color:#fff;"></i>
+</a>
+<img src="logo.png"class="logo"id="logo"/>
+
+<input type="text"class="searchbar"id="search"placeholder="Search..."
+oninput="scrollToText(this.value);"/>
+
+
+<i class="fa fa-search"id="searchbtn"onclick="shwSrch();"></i>
+
+    </nav>
+
+
+
+</div>
+
+
+
+
+<div class="loadingdiv"id="loader">
+<center>
+<div class="loader">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="nav_script.js"></script>
+
+<script src="script.js">
+</script>
+
+
+
+
+  </body>
+
+</html>
+

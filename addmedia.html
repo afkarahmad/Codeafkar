@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en"translate="no">
+  <head>
+  <title>Adding media in HTML</title>
+       <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="We are a website dedicated to helping people learn and master the art of web development.">
+
+    <meta name="author" content="Dr.Afkar Ahmad">
+
+   
+  <meta name="theme-color" content="#6c999d">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="style-b.css">
+
+  <link rel="stylesheet" href="nav_style.css">
+  
+  <link rel="stylesheet"href="loading.css">
+
+  
+  <link rel="icon" href="icon.png">
+  
+  
+  </head>    
+  <body>
+
+
+
+<div class="page"id="page">
+
+<br/>
+<h2>Adding media(image,audio, video) to HTML:</h2>
+<p>
+HTML does provide various elements for embedding media content like images, audio, and video into web pages. 
+</p>
+<h3>Adding Images in HTML:</h3>
+<p>
+<b>Prepare Your Image:</b> First, ensure you have the image you want to add to your web page. Make sure it's in a web-compatible format like JPEG, PNG, or GIF.
+<br/>
+<br/>
+
+<b>Create an HTML Document:</b> Start by creating an HTML document or opening an existing one using a text editor or an integrated development environment (IDE).
+<br/>
+<br/>
+<b>Use the &lt;img&gt; Element:</b> To add an image to your HTML document, use the &lt;img&gt; element.<br/> Here's the basic structure of the &lt;img&gt; element:
+<div class="output">
+
+&lt;img src="image.jpg" alt="Description of the image"&gt;
+
+</div>
+<b>src:</b> This attribute specifies the source (file path or URL) of your image.
+<br/>
+<br/>
+
+<b>alt:</b> This attribute provides a text description of the image.
+<br/>
+<br/>
+ It's essential for accessibility and SEO. Replace "Description of the image" with a brief, descriptive text.Insert Image into Your HTML: Place the &lt;img&gt; element within the HTML where you want the image to appear. For example:
+ <div class="code">
+ <pre>
+ &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+    &lt;img src="image.jpg" alt="A beautiful landscape"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<b>Save and View:</b> Save your HTML file and open it in a web browser to see the image displayed on your web page.
+</p>
+<h3>Adding GIFs in HTML:</h3>
+<p>Adding a GIF is essentially the same as adding an image, as GIFs are also image files. Follow the same steps mentioned above for adding images, but ensure that you use a GIF file as the image source (specified in the src attribute).Here's an example of how to add a GIF to your HTML:
+
+<div class="code">
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Animated GIF&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Check out this cool animated GIF:&lt;/h1&gt;
+    &lt;img src="animated.gif" alt="A funny animated GIF"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+Replace "animated.gif" with the actual file path or URL of your GIF.Remember to provide meaningful alternative text (the alt attribute) for both images and GIFs to ensure accessibility and better SEO. This text is displayed if the image or GIF cannot be loaded or for users with disabilities who rely on screen readers.
+
+</p>
+
+
+
+
+<h3>Adding Audio in HTML:</h3>
+<p>
+<b>Prepare Your Audio File:</b> First, make sure you have the audio file you want to add to your web page. Common audio formats supported by web browsers include MP3, WAV, and OGG.
+<br/>
+<br/>
+<b>Create an HTML Document:</b> Start by creating an HTML document or opening an existing one using a text editor or an integrated development environment (IDE).
+<br/>
+<br/>
+<b>Use the &lt;audio&gt; Element:</b> To add audio to your HTML document, use the &lt;audio&gt; element. Here's the basic structure of the &lt;audio&gt; element:
+
+ <div class="code">
+ <pre>
+   &lt;audio controls&gt;
+     &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+     Your browser does not support the audio element.
+   &lt;/audio&gt;
+   
+   </pre>
+   </div>
+
+  &lt;audio&gt;: This is the main &lt;audio&gt; element that wraps the audio content.
+  <br/>
+  <br/>
+   - controls: The controls attribute adds audio playback controls (play, pause, volume, etc.) to the audio player.
+   <br/>
+<br/>
+   - &lt;source&gt;: Inside the &lt;audio&gt; element, you can include one or more &lt;source&gt; elements. Each &lt;source&gt; element specifies a different audio file format and its source using the src attribute. The type attribute indicates the MIME type of the audio file.
+   <br/>
+<br/>
+   - The text inside the &lt;audio&gt; element is a fallback message that will be displayed if the browser does not support the audio element.
+<br/>
+<br/>
+<b>Insert Audio into Your HTML:</b>Place the &lt;audio&gt; element within the HTML where you want the audio player to appear. For example:
+
+   <div class="code">
+   <pre>
+   
+   &lt;!DOCTYPE html&gt;
+   &lt;html&gt;
+   &lt;head&gt;
+       &lt;title&gt;Audio Example&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+       &lt;h1&gt;Listen to this audio:&lt;/h1&gt;
+       &lt;audio controls&gt;
+           &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+           Your browser does not support the audio element.
+       &lt;/audio&gt;
+   &lt;/body&gt;
+   &lt;/html&gt;
+   </pre>
+   </div>
+
+<b>Save and View:</b> Save your HTML file and open it in a web browser to see the audio player with playback controls. Users can click the play button to listen to the audio.
+
+<br/>
+<br/>
+Remember to replace "audio.mp3" with the actual file path or URL of your audio file. The &lt;audio&gt; element provides a straightforward way to add audio content to your web pages, making it easy for visitors to listen to sound or music directly on your site.
+
+</p>
+
+
+<h3>Adding Video in HTML:</h3>
+<p>
+<b>Prepare Your Video File:</b> First, make sure you have the video file you want to add to your web page. Common video formats supported by web browsers include MP4, WebM, and OGG.
+<br/>
+<br/>
+<b>Create an HTML Document:</b> Start by creating an HTML document or opening an existing one using a text editor or an integrated development environment (IDE).
+<br/>
+<br/>
+
+<b>Use the &lt;video&gt; Element:</b>
+ To add video to your HTML document, use the &lt;video&gt; element. Here's the basic structure of the &lt;video&gt; element:
+ <div class="output">
+ 
+ &lt;video controls width="640" height="360"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  
+  Your browser does not support the video element.&lt;/video&gt;
+  </div>
+  &lt;video&gt;: This is the main &lt;video&gt; element that wraps the video content.controls: The controls attribute adds video playback controls (play, pause, volume, etc.) to the video player.width and height: You can specify the dimensions (in pixels) of the video player using the width and height attributes.
+  <br/>
+<br/>
+ &lt;source&gt;: Inside the &lt;video&gt; element, you can include one or more &lt;source&gt; elements. Each &lt;source&gt; element specifies a different video file format and its source using the src attribute. The type attribute indicates the MIME type of the video file.The text inside the &lt;video&gt; element is a fallback message that will be displayed if the browser does not support the video element.Insert Video into Your HTML: Place the &lt;video&gt; element within the HTML where you want the video player to appear. For example:
+ <div class="code">
+ <pre>
+ &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Video Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Watch this video:&lt;/h1&gt;
+    &lt;video controls width="640" height="360"&gt;
+        &lt;source src="video.mp4" type="video/mp4"&gt;
+        Your browser does not support the video element.
+    &lt;/video&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<b>Save and View:</b> Save your HTML file and open it in a web browser to see the video player with playback controls. Users can click the play button to watch the video.Remember to replace "video.mp4" with the actual file path or URL of your video file. The &lt;video&gt; element provides an easy way to add video content to your web pages, allowing visitors to watch videos directly on your site with built-in playback controls.
+</p>
+
+
+
+   <div class="nextsec">
+   <h4>6/8</h4>
+
+<a href="list.html">   
+   <button>Next »</button></a>
+   </div>
+   
+   
+   
+
+
+
+
+
+
+</div>
+<!--End of page-->
+<div class="footer">
+&copy;2023 CODEAFKAR,All Rights Reserved 
+</div>   
+   
+   
+
+
+
+
+
+<button class="searchbtn"onclick="popupScreen();">
+<i class="fa fa-plus fa-2x"style="color:#fff;">
+</i>
+</button>
+
+<div class="popup-b"id="id01">
+<div class="popup-topics">
+<h2>Choose Topics</h2>
+<hr/>
+<div class="popup-overflow">
+<a href="html.html"><button class="topic_btn">Basic structure of HTML</button></a>
+
+<a href="tags.html"><button class="topic_btn">HTML tags and attributes</button></a>
+
+
+<a href="sometag.html"><button class="topic_btn">Some HTML elements </button></a>
+
+<a href="frmttxt.html"><button class="topic_btn">Formatting text in HTML</button></a>
+
+
+
+<a href="table.html"><button class="topic_btn">Creating table in HTML</button></a>
+
+
+
+<a href="addmedia.html"><button class="topic_btn">Adding media to HTML</button></a>
+
+
+<a href="list.html"><button class="topic_btn">Creating list in HTML</button></a>
+
+
+
+<a href="formtag.html"><button class="topic_btn">Forms and input</button></a>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+      <nav>
+
+<a href="index.html">
+
+<i class="fa fa-home fa-2x"style="margin-top:14px;
+margin-left:10px;color:#fff;"></i>
+</a>
+<img src="logo.png"class="logo"id="logo"/>
+
+<input type="text"class="searchbar"id="search"placeholder="Search..."
+oninput="scrollToText(this.value);"/>
+
+
+<i class="fa fa-search"id="searchbtn"onclick="shwSrch();"></i>
+
+    </nav>
+
+
+
+</div>
+
+
+
+
+<div class="loadingdiv"id="loader">
+<center>
+<div class="loader">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="nav_script.js"></script>
+
+<script src="script.js">
+</script>
+
+
+
+
+  </body>
+
+</html>
+

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en"translate="no">
+  <head>
+  <title>CODEAFKAR</title>
+       <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="it is a platform offers comprehensive tutorials on HTML, CSS, and JavaScript, providing you with the necessary knowledge to build stunning websites. Whether you're a beginner or an experienced coder, our user-friendly resources and tutorials will empower you to create amazing web projects.">
+
+    <meta name="author" content="Afkar Ahmad">
+
+   
+  <meta name="theme-color" content="#6c999d">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="nav_style.css">
+
+  <link rel="stylesheet" href="loading.css">
+  
+  <link rel="icon" href="icon.png">
+  
+  
+  </head>    
+  <body>
+
+
+<div class="home-header">
+
+<div class="page">
+<div class="page_main">
+
+<center>
+
+
+
+   
+   
+
+
+ <div id="list"class="lst">
+
+  <li>
+  <div class="item_div">
+    <img class="item_logo" src="laptop.jpg" alt="Your item_logo">
+    <div class="overlay">
+    <div class="mrgn">
+      <h2>Select Learning<br/>Path</h2>
+      <button class="optn_btn"onclick="popupScreen();">
+      SELECT</button>
+      </div>
+    </div>
+  </div>
+</li>      
+      
+      
+      
+      <li>
+  <div class="item_div">
+    <img class="item_logo" src="laptop.jpg" alt="Your item_logo">
+    <div class="overlay">
+    <div class="mrgn">
+      <h2>HTML,CSS Quiz<br/>Test</h2>
+      <button class="optn_btn">
+      START QUIZ</button>
+      </div>
+    </div>
+  </div>
+      
+      </li>
+      
+      <li>
+      
+  <div class="item_div">
+    <img class="item_logo" src="laptop.jpg" alt="Your item_logo">
+    <div class="overlay">
+    <div class="mrgn">
+      <h2>Javascript Quiz<br/>Test</h2>
+      <button class="optn_btn">
+      START QUIZ</button>
+      </div>
+    </div>
+  </div>
+    </li>  
+   
+   
+   <li>
+   
+   <div class="item_div">
+    <img class="item_logo" src="laptop.jpg" alt="Your item_logo">
+    <div class="overlay">
+    <div class="mrgn">
+      <h2>Discover Coding<br/>Samples</h2>
+      <button class="optn_btn">
+      EXPLORE NOW</button>
+      </div>
+    </div>
+  </div>
+    </li>  
+  
+  
+  
+    <li>  
+           
+   
+   <div class="item_div">
+    <img class="item_logo" src="laptop.jpg" alt="Your item_logo">
+    <div class="overlay">
+    <div class="mrgn">
+      <h2>Discover Website<br/>Templetes</h2>
+      <button class="optn_btn">
+      EXPLORE NOW</button>
+      </div>
+    </div>
+  </div>
+  </li>
+
+
+  </div>    
+     
+      
+  
+   
+   
+      
+      
+      
+      
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+      <nav>
+
+<div class="menu_icon"onmousedown="shwNav();">
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+
+</div>
+
+
+<img src="logo.png"class="logo"id="logo"/>
+<input type="text"class="searchbar"id="search"placeholder="Search..."onkeyup="searchList()"/>
+
+
+<i class="fa fa-search"id="searchbtn"onclick="shwSrch();"></i>
+
+    </nav>
+
+
+
+
+<div class="menu"id="menu">
+
+<span id="close"onclick="closeNav();">&times;</span>
+
+
+
+<ul class="option"> 
+
+<a href="index.html">
+   <li>  <span class="active"><i class="fa fa-home"></i> &nbsp;&nbsp;Home
+        </span>
+   </li>
+</a>
+
+
+
+<a href="about.html">
+    <li>
+    <i class="fa fa-info-circle"></i> &nbsp;&nbsp;About
+   </li>
+</a>
+
+
+
+<a href="contact.html">
+
+       <li><i class="fa fa-address-book"></i> &nbsp;&nbsp;Contact
+       </li>
+</a>
+
+
+<a href="help.html">
+    <li>
+       <i class="fa fa-question-circle"></i> &nbsp;&nbsp;Help and feedback
+       </li>
+</a>
+
+
+</ul>
+
+</div>
+
+
+
+<div id="welcome-message">
+    <header class="welcome-header">
+        <div class="wel-text">
+            <h1>Welcome to CODEAFKAR</h1>
+            <p>A platform for learning HTML, CSS, and JavaScript.</p>
+            <a href="#" class="get-started-button"id="get-started-button">Get Started</a>
+        </div>
+        <div class="image">
+            <img src="CEO.jpg" alt="Learning Image">
+        </div>
+    </header>
+    <div class="main-content">
+
+    </div>
+    </div>
+    
+    
+
+
+
+
+
+<div class="loadingdiv"id="loader">
+<center>
+<div class="loader">
+</div>
+</div>
+
+<div id="id01" class="popup">
+  
+  <div class="popup-content animate">
+  <div class="popup_margin">
+  <center>
+ <a href="html.html"> <button class="popup_optn">LEARN HTML</button></a>
+ 
+ <a href="css.html">
+  <button class="popup_optn">LEARN CSS</button></a>
+  
+  <button class="popup_optn">LEARN JAVASCRIPT</button>
+  <button class="popup_close"onclick="popupClose();">CLOSE</button>
+  
+  
+  
+  </div>
+  </div>
+</div>
+
+
+
+
+<script src="nav_script.js"></script>
+<script src="script.js"></script>
+
+
+
+
+  </body>
+
+</html>
+

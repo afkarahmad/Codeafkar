@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en"translate="no">
+  <head>
+  <title>Creating list in HTML</title>
+       <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="We are a website dedicated to helping people learn and master the art of web development.">
+
+    <meta name="author" content="Dr.Afkar Ahmad">
+
+   
+  <meta name="theme-color" content="#6c999d">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet"href="style.css">
+  
+  <link rel="stylesheet"href="style-b.css">
+
+  <link rel="stylesheet"href="nav_style.css">
+  
+  <link rel="stylesheet"href="loading.css">
+
+  
+  <link rel="icon" href="icon.png">
+  
+  
+  </head>    
+  <body>
+
+
+
+<div class="page"id="page">
+
+<br/>
+<h2>Creating list in HTML:</h2>
+<p>
+HTML (Hypertext Markup Language) provides several ways to create lists on web pages, making it easier to organize and present information. There are two main types of lists in HTML: ordered lists and unordered lists.
+</p>
+<h3>Ordered Lists (ol):</h3>
+   Ordered lists are used when the order of the items matters. They are typically displayed with numbers or letters. You can create an ordered list using the &lt;ol&gt; element and list items with the &lt;li&gt; element. Here's an example:
+<div class="code">
+<pre>
+   &lt;ol&gt;
+     &lt;li&gt;Item 1&lt;/li&gt;
+     &lt;li&gt;Item 2&lt;/li&gt;
+     &lt;li&gt;Item 3&lt;/li&gt;
+   &lt;/ol&gt;
+</pre>
+</div>
+<b>Output:</b>
+<div class="output">
+  <ol>
+   <li> Item 1 </li>
+   <li> Item 2 </li>
+    <li> Item 3 </li>
+    </ol>
+</div>
+</p>
+<h3>Unordered Lists (ul):</h3>
+
+<p>Unordered lists are used when the order of items doesn't matter. They are typically displayed with bullet points or other markers. You can create an unordered list using the &lt;ul&gt; element and list items with the &lt;li&gt; element. Here's an example:
+<div class="code">
+<pre>
+   &lt;ul&gt;
+     &lt;li&gt;Item A&lt;/li&gt;
+     &lt;li&gt;Item B&lt;/li&gt;
+     &lt;li&gt;Item C&lt;/li&gt;
+   &lt;/ul&gt;
+   </pre>
+   </div>
+<b>Output:</b>
+<div class="output">
+  <ul>
+   <li> Item A </li>
+   <li> Item B </li>
+    <li> Item C </li>
+    </ul>
+</div>
+</p>
+<h3>Nested Lists:</h3>
+<p>
+   You can also nest lists inside one another to create more complex structures. For example, you can nest an ordered list inside an unordered list or vice versa.
+<div class="code">
+<pre>
+   &lt;ul&gt;
+     &lt;li&gt;Unordered List Item 1&lt;/li&gt;
+     &lt;li&gt;Unordered List Item 2
+       &lt;ol&gt;
+         &lt;li&gt;Ordered List Item 1&lt;/li&gt;
+         &lt;li&gt;Ordered List Item 2&lt;/li&gt;
+       &lt;/ol&gt;
+     &lt;/li&gt;
+     &lt;li&gt;Unordered List Item 3&lt;/li&gt;
+   &lt;/ul&gt;
+</pre>
+</div>
+
+   This would create a nested list structure with both ordered and unordered lists.
+</p>
+<p class="r_texts">
+Lists in HTML are not only useful for presenting content in an organized manner but also for improving accessibility and search engine optimization by providing structured information to browsers and other web tools.
+
+</p>
+
+
+
+   <div class="nextsec">
+   <h4>7/8</h4>
+
+<a href="formtag.html">   
+   <button>Next »</button></a>
+   </div>
+   
+   
+   
+
+
+
+
+
+
+</div>
+<!--End of page-->
+<div class="footer">
+&copy;2023 CODEAFKAR,All Rights Reserved 
+</div>   
+   
+   
+
+
+
+
+
+<button class="searchbtn"onclick="popupScreen();">
+<i class="fa fa-plus fa-2x"style="color:#fff;">
+</i>
+</button>
+
+<div class="popup-b"id="id01">
+<div class="popup-topics">
+<h2>Choose Topics</h2>
+<hr/>
+<div class="popup-overflow">
+<a href="html.html"><button class="topic_btn">Basic structure of HTML</button></a>
+
+<a href="tags.html"><button class="topic_btn">HTML tags and attributes</button></a>
+
+
+<a href="sometag.html"><button class="topic_btn">Some HTML elements </button></a>
+
+<a href="frmttxt.html"><button class="topic_btn">Formatting text in HTML</button></a>
+
+
+
+<a href="table.html"><button class="topic_btn">Creating table in HTML</button></a>
+
+
+
+<a href="addmedia.html"><button class="topic_btn">Adding media to HTML</button></a>
+
+
+<a href="list.html"><button class="topic_btn">Creating list in HTML</button></a>
+
+
+
+<a href="formtag.html"><button class="topic_btn">Forms and input</button></a>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+      <nav>
+
+<a href="index.html">
+
+<i class="fa fa-home fa-2x"style="margin-top:14px;
+margin-left:10px;color:#fff;"></i>
+</a>
+<img src="logo.png"class="logo"id="logo"/>
+
+<input type="text"class="searchbar"id="search"placeholder="Search..."
+oninput="scrollToText(this.value);"/>
+
+
+<i class="fa fa-search"id="searchbtn"onclick="shwSrch();"></i>
+
+    </nav>
+
+
+
+</div>
+
+
+
+
+<div class="loadingdiv"id="loader">
+<center>
+<div class="loader">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="nav_script.js"></script>
+
+<script src="script.js">
+</script>
+
+
+
+
+  </body>
+
+</html>
+

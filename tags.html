@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en"translate="no">
+  <head>
+  <title>Learn HTML tags and Attributes</title>
+       <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="We are a website dedicated to helping people learn and master the art of web development.">
+
+    <meta name="author" content="Dr.Afkar Ahmad">
+
+   
+  <meta name="theme-color" content="#6c999d">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="style-b.css">
+
+  <link rel="stylesheet" href="nav_style.css">
+  
+  <link rel="stylesheet"href="loading.css">
+
+  
+  <link rel="icon" href="icon.png">
+  
+  
+  </head>    
+  <body>
+
+
+
+<div class="page"id="page">
+
+<br/>
+<h3>What is tag in HTML?</h3>
+<p>
+In HTML, a "tag" refers to a specific set of characters used to define and structure elements within a web page.<br> Tags are a fundamental part of HTML and are used to mark up content to specify how it should be displayed or behave on a webpage. Tags are enclosed in angle brackets ("<" and ">") and come in pairs: an opening tag and a closing tag. The opening tag contains the element's name, and the closing tag has a forward slash ("/") before the element name. Here's an example:
+
+<div class="code">
+<pre>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+</pre>
+</div>
+<br/>
+<b>In this example:</b>
+<br/>
+<span class="r_tag">&lt;p&gt;</span> is the opening tag, which marks the beginning of a paragraph element.
+<br/>
+
+<span class="r_tag">&lt;/p&gt;</span> is the closing tag, which marks the end of the paragraph element.
+
+The content between the opening and closing tags is what gets affected by the tag. Different tags are used for various purposes, like headings, links, images, lists, and more. HTML tags provide the structure and formatting instructions that web browsers use to render web pages correctly.
+
+Overall, HTML tags are essential for creating the structure and content of web pages and are at the core of web development.</p>
+
+<div class="r_texts">
+<p>
+In HTML, there are some tags that don't need to be closed manually; they are called self-closing tags.
+</p>
+</div>
+<br/>
+<h3>Self-closing tag in HTML</h3>
+<p>
+
+
+A self-closing tag in HTML is a tag that doesn't require a separate closing tag because it doesn't enclose any content or elements. Instead, it closes itself within a single tag. These tags are also known as "void elements" or "empty elements." They are typically used for inserting standalone elements or providing attributes to elements without any enclosed content.
+<br/>
+<br/>
+<b>Here are some common self-closing tags in HTML:</b>
+<br/>
+<br/>
+1. &lt;img&gt;: Used to embed images in a webpage.
+<br/>
+<br/>
+2. &lt;br&gt;: Creates a line break or newline within text.
+<br/>
+<br/>
+3. &lt;input&gt;: Defines an input field for forms.
+<br/>
+<br/>
+4. &lt;hr&gt;: Inserts a horizontal rule or line for visual separation.
+<br/>
+<br/>
+5. &lt;link&gt;: Used to link external resources like stylesheets or icons.
+<br/>
+<br/>
+6. &lt;meta&gt;: Provides metadata about the document, such as character encoding and author information.
+<br/>
+<br/>
+These self-closing tags simplify the structure of HTML documents by not requiring both opening and closing tags. They are written as a single tag with a space before the closing slash, like <span class="r_tag">&lt;tagname /&gt;
+</span>
+
+
+</p>
+
+<h3>What is attributes</h3>
+<p>
+
+ attributes provide additional information about an HTML element and are used to modify or define the properties of that element. Attributes are always specified in the opening tag of an HTML element and are written as name-value pairs within the element's start tag.
+
+
+
+<div class="r_texts">
+To write HTML attributes, you would use the following format:
+<br/>
+
+<div class="code">
+<i>
+&lt;ElementName AttributeName="AttributeValue"> your code &lt;/ElementName&gt;
+</i>
+</div>
+
+
+This format is used to add attributes to HTML elements, where "ElementName" represents the name of the HTML element, "AttributeName" is the name of the attribute, and "Attribute value" is the value assigned to that attribute. Your code or content goes between the opening and closing tags of the element.
+</div>
+
+<br/>
+<br/>
+Here's an explanation of attributes in HTML:
+<br/>
+<br/>
+<b>1.Name:</b> This is the name of the attribute and is always written in lowercase. Common attributes include "id," "class," "src," "alt," "href," "width," "height," and many others.
+<br/>
+<br/>
+<b>2.Value:</b> The value of the attribute is what provides specific information or settings for the element. It is enclosed in double or single quotes. For example, `href="https://www.example.com"` or `alt="Image description"`.
+<br/>
+<br/>
+<b>
+Attributes serve various purposes in HTML:
+</b>
+<br/>
+<br/>
+
+<b>Identifying Elements:</b>
+ Attributes like "id" and "class" are used to uniquely identify or categorize elements. "id" must be unique within a document, while "class" can be applied to multiple elements.
+<br/>
+<br/>
+<b>Providing Metadata:</b> Attributes like "src," "alt," and "title" are used to provide additional information about elements. For example, the "src" attribute in an `<img>` tag specifies the image source.
+<br/>
+<br/>
+<b>Defining Behavior:</b> Some attributes, like "href" in anchor `&lt;a&gt;` tags or "type" in input fields, define the behavior or functionality of the element.
+<br/>
+<br/>
+<b>Styling and Formatting:</b> Attributes like "style" allow you to apply inline CSS styles to an element, affecting its appearance.
+<br/>
+<br/>
+<b>
+Here's an example of how attributes are used in HTML:
+</b>
+
+
+
+<div class="code">
+<pre>
+&lt;a href="https://
+www.example.com" title="Visit 
+Example"&gt;Click here to visit 
+Example&lt;/a&gt;
+
+&lt;img src="image.jpg" alt="A 
+beautiful landscape" width="500" 
+height="300" style="border: 1px 
+solid #000;"&gt;
+
+&lt;p class="important"&gt;This 
+is an important paragraph.&lt;/
+p&gt;
+
+</pre>
+</div>
+
+<b>
+
+In this example:
+</b>
+- The `&lt;a&gt;` element has "href" and "title" attributes.
+<br/>
+- The `&lt;img&gt;` element has "src," "alt," "width," "height," and "style" attributes.
+
+<br/>
+- The `&lt;p&gt;` element has a "class" attribute.
+<br/>
+Attributes play a crucial role in customizing the behavior, appearance, and functionality of HTML elements within a web page.
+
+</p>
+
+<hr/>
+
+<h3>Some common HTML elements(tags):</h3>
+
+      <table class="tags_list">
+
+
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>HTML Tag</th>
+                <th>Function</th>
+            </tr>
+        </thead>
+        <!-- Table Body -->
+        <tbody>
+            <!-- Rows for HTML Tags and Functions -->
+            <tr>
+                <td><code>&lt;h1&gt;</code></td>
+                <td>Defines a top-level heading</td>
+            </tr>
+            <tr>
+                <td><code>&lt;p&gt;</code></td>
+                <td>Represents a paragraph of text</td>
+            </tr>
+            <tr>
+                <td><code>&lt;a&gt;</code></td>
+                <td>Creates a hyperlink to other web pages</td>
+            </tr>
+            <tr>
+                <td><code>&lt;img&gt;</code></td>
+                <td>Embeds images in a web page</td>
+            </tr>
+            <tr>
+                <td><code>&lt;ul&gt;</code></td>
+                <td>Defines an unordered (bulleted) list</td>
+            </tr>
+            <tr>
+                <td><code>&lt;ol&gt;</code></td>
+                <td>Specifies an ordered (numbered) list</td>
+            </tr>
+            <tr>
+                <td><code>&lt;li&gt;</code></td>
+                <td>Represents a list item in a list</td>
+            </tr>
+            <tr>
+                <td><code>&lt;div&gt;</code></td>
+                <td>Defines a division or section in an HTML document</td>
+            </tr>
+            <tr>
+                <td><code>&lt;span&gt;</code></td>
+                <td>Used for styling a specific portion of text</td>
+            </tr>
+            <tr>
+                <td><code>&lt;table&gt;</code></td>
+                <td>Creates a table for organizing data</td>
+            </tr>
+            <tr>
+                <td><code>&lt;tr&gt;</code></td>
+                <td>Defines a table row</td>
+            </tr>
+            <tr>
+                <td><code>&lt;td&gt;</code></td>
+                <td>Represents a table data/cell</td>
+            </tr>
+            <tr>
+                <td><code>&lt;th&gt;</code></td>
+                <td>Defines a table header cell</td>
+            </tr>
+            <tr>
+                <td><code>&lt;form&gt;</code></td>
+                <td>Creates an interactive form for user input</td>
+            </tr>
+            <tr>
+                <td><code>&lt;input&gt;</code></td>
+                <td>Represents an input field in a form</td>
+            </tr>
+            <tr>
+                <td><code>&lt;button&gt;</code></td>
+                <td>Defines a clickable button</td>
+            </tr>
+            <tr>
+                <td><code>&lt;textarea&gt;</code></td>
+                <td>Creates a multi-line text input area</td>
+            </tr>
+            <tr>
+                <td><code>&lt;iframe&gt;</code></td>
+                <td>Embeds an external web page within the current page</td>
+            </tr>
+            <tr>
+                <td><code>&lt;meta&gt;</code></td>
+                <td>Provides metadata about the HTML document</td>
+            </tr>
+            <tr>
+                <td><code>&lt;blockquote&gt;</code></td>
+                <td>Indicates a block of quoted text</td>
+            </tr>
+            <tr>
+                <td><code>&lt;head&gt;</code></td>
+                <td>Contains meta-information about the document</td>
+            </tr>
+   <td><code>&lt;body&gt;</code></td>
+                <td>Represents the content of the HTML document</td>
+            </tr>
+            <tr>
+                <td><code>&lt;title&gt;</code></td>
+                <td>Defines the title of the HTML document</td>
+            </tr>
+            <tr>
+                <td><code>&lt;style&gt;</code></td>
+                <td>Embeds CSS styles within the document</td>
+            </tr>
+            <tr>
+                <td><code>&lt;script&gt;</code></td>
+                <td>Embeds JavaScript code within the document</td>
+            </tr>
+            <tr>
+                <td><code>&lt;header&gt;</code></td>
+                <td>Represents a container for introductory content</td>
+            </tr>
+            <tr>
+                <td><code>&lt;footer&gt;</code></td>
+                <td>Represents a container for the footer of a document</td>
+            </tr>
+            <tr>
+                <td><code>&lt;nav&gt;</code></td>
+                <td>Defines navigation links within a document</td>
+            </tr>
+            <tr>
+                <td><code>&lt;article&gt;</code></td>
+                <td>Defines self-contained content that can be distributed independently</td>
+            </tr>
+            <tr>
+                <td><code>&lt;section&gt;</code></td>
+                <td>Defines a section in a document</td>
+            </tr>
+            <tr>
+                <td><code>&lt;aside&gt;</code></td>
+                <td>Represents content that is tangentially related to the content around it</td>
+            </tr>
+            <tr>
+                <td><code>&lt;time&gt;</code></td>
+                <td>Represents a specific period in time</td>
+            </tr>
+            <tr>
+                <td><code>&lt;mark&gt;</code></td>
+                <td>Highlights or marks text for reference</td>
+            </tr>
+            <tr>
+                <td><code>&lt;abbr&gt;</code></td>
+                <td>Defines an abbreviation or acronym</td>
+            </tr>         
+            
+            
+            
+            
+            
+            
+            
+                    </tbody>
+    </table>
+    
+
+
+
+
+   <div class="nextsec">
+   <h4>2/8</h4>
+
+<a href="sometag.html">   
+   <button>Next »</button></a>
+   </div>
+   
+   
+   
+
+
+
+
+
+
+</div>
+<!--End of page-->
+<div class="footer">
+&copy;2023 CODEAFKAR,All Rights Reserved 
+</div>   
+   
+   
+
+
+
+
+
+<button class="searchbtn"onclick="popupScreen();">
+<i class="fa fa-plus fa-2x"style="color:#fff;">
+</i>
+</button>
+
+<div class="popup-b"id="id01">
+<div class="popup-topics">
+<h2>Choose Topics</h2>
+<hr/>
+<div class="popup-overflow">
+<a href="html.html"><button class="topic_btn">Basic structure of HTML</button></a>
+
+<a href="tags.html"><button class="topic_btn">HTML tags and attributes</button></a>
+
+
+<a href="sometag.html"><button class="topic_btn">Some HTML elements </button></a>
+
+<a href="frmttxt.html"><button class="topic_btn">Formatting text in HTML</button></a>
+
+
+
+<a href="table.html"><button class="topic_btn">Creating table in HTML</button></a>
+
+
+
+<a href="addmedia.html"><button class="topic_btn">Adding media to HTML</button></a>
+
+
+<a href="list.html"><button class="topic_btn">Creating list in HTML</button></a>
+
+
+
+<a href="formtag.html"><button class="topic_btn">Forms and input</button></a>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+      <nav>
+
+<a href="index.html">
+
+<i class="fa fa-home fa-2x"style="margin-top:14px;
+margin-left:10px;color:#fff;"></i>
+</a>
+<img src="logo.png"class="logo"id="logo"/>
+
+<input type="text"class="searchbar"id="search"placeholder="Search..."
+oninput="scrollToText(this.value);"/>
+
+
+<i class="fa fa-search"id="searchbtn"onclick="shwSrch();"></i>
+
+    </nav>
+
+
+
+</div>
+
+
+
+
+<div class="loadingdiv"id="loader">
+<center>
+<div class="loader">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="nav_script.js"></script>
+
+<script src="script.js">
+</script>
+
+
+
+
+  </body>
+
+</html>
+

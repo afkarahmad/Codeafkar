@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en"translate="no">
+  <head>
+  <title>Learn HTML</title>
+       <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="We are a website dedicated to helping people learn and master the art of web development. Our platform offers comprehensive tutorials on HTML, CSS, and JavaScript, providing you with the necessary knowledge to build stunning websites.">
+
+    <meta name="author" content="Dr.Afkar Ahmad">
+
+   
+  <meta name="theme-color" content="#6c999d">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="style-b.css">
+
+  <link rel="stylesheet" href="nav_style.css">
+  
+  <link rel="stylesheet"href="loading.css">
+
+  
+  <link rel="icon" href="icon.png">
+  
+  
+  </head>    
+  <body>
+
+
+
+<div class="page"id="page">
+
+<br/>
+<h3>Introduction to HTML?</h3>
+<p>
+
+We're going to dive into the exciting world of web development by learning about HTML, which stands for HyperText Markup Language. Think of HTML as the building blocks of a web page. Just like how you use LEGO bricks to create amazing structures, HTML helps us create the structure and content of a webpage on the internet.
+<br/>
+<br/>
+HTML uses special codes called 'tags' to define different elements on a webpage, such as headings, paragraphs, images, and links. These tags are like instructions that tell a web browser how to display the content. For example, the '&lt;h1&gt;' tag is used to create a main heading, while the '&lt;p&gt;' tag is used for paragraphs.
+<br/>
+<br/>
+As you learn HTML, you'll be able to arrange text,images, and links in a structured way, making your web pages look neat and organized. Remember, HTML is just the beginning. We'll also explore how to add style with CSS and make our pages interactive with JavaScript. So, get ready to unleash your creativity and start building your own web pages with HTML!
+</p>
+<h3>How to save and run HTML?</h3>
+<p>
+<b>
+To save and run HTML files on different platforms, follow these general steps:</b>
+<br/>
+<br/>
+<ol>
+<li> <b>Create Your HTML File:</b>
+   Start by creating a new file using a text editor like Notepad (<kbd>Windows</kbd>), TextEdit (<kbd>Mac</kbd>), or any code editor like Visual Studio Code, Sublime Text, or Atom. Save the file with a "<kbd>.html</kbd>" extension. For example, you can name it "<kbd>index.html</kbd>".
+</li>
+<br/>
+<li> <b>Write Your HTML Code</b>:
+   Open the `.html` file you created and write or paste your HTML code inside it.</li>
+<br/>
+<li> <b>Save the File</b>:
+   After writing your HTML code, save the file. Make sure you choose the correct file type (e.g., `.html`) and location on your device.
+</li>
+<br/>
+ <b>Run on Different Platforms</b>:
+<br/>
+<br/>
+   <b>Android:</b><br/>
+    Install a code editor app like "AIDE" or "QuickEdit" from the Google Play Store.
+     - Open your HTML file in the app and use its built-in preview feature to view your web page.
+<br/>
+<br/>
+   <b>Mac:</b>
+   <br/>
+     - Open the HTML file with Safari, Chrome, or any other web browser. You can also use a code editor for editing and previewing.
+<br/>
+<br/>
+   <b>PC / Windows:</b>
+   <br/>
+     - Open the HTML file with any web browser like Chrome, Firefox, or Edge.
+     - Alternatively, use a code editor for both editing and previewing.
+<br/>
+<br/>
+
+<li> <b>Viewing the Result:</b>
+   After opening the HTML file in a web browser or using a code editor's preview feature, you'll see the rendered web page based on your HTML code.
+
+Remember that certain HTML features might behave differently across different browsers, so it's a good practice to test your pages on multiple browsers to ensure consistent rendering.
+</li>
+</ol>
+</p>
+
+<br/>
+<br/>
+<h3>How to write HTML code?</h3>
+
+<p>
+HTML consists of various elements and tags that define the structure and appearance of a webpage.
+
+HTML documents are built using a series of tags enclosed in angle brackets. Tags are used to mark up different parts of the content, such as headings, paragraphs, images, links, and more. Here's a basic example of an HTML document:
+<div class="code">
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My
+   Webpage&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph
+    of text.&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<br/>
+<b>
+Lets we break down what's happening here:
+</b>
+<br/>
+<br/>
+<span class="r_tag">&lt;!DOCTYPE html&gt;</span>: This declaration specifies the document type and version of HTML being used (HTML5 in this case).
+
+<hr/>
+
+<span class="r_tag">&lt;html&gt;</span>: The root element that encloses all other HTML elements.
+<hr/>
+
+<span class="r_tag">&lt;head&gt;</span>: Contains metadata about the webpage, such as the title that appears in the browser tab.
+
+<hr/>
+
+<span class="r_tag">&lt;title&gt;</span>: Sets the title of the webpage as it appears in the browser tab.
+<hr/>
+
+<span class="r_tag">&lt;body&gt;</span>: Contains the visible content of the webpage.
+
+<hr/>
+
+<span class="r_tag">&lt;h1&gt;</span>: A heading element. There are six levels of headings 
+(&lt;h1&gt; to &lt;h6&gt;) with decreasing importance.
+
+<hr/>
+<span class="r_tag">&lt;p&gt;</span>: A paragraph element to define paragraphs of text.
+
+<div class="r_texts">These are just some basic HTML elements and tags. HTML offers a wide range of elements for creating complex webpages. You can combine these elements, nest them within each other, and apply CSS to control the visual presentation of your webpage.
+</div>
+</p>
+<h3>How to add comment in HTML code</h3>
+
+<p>
+You can add comments using the `&lt;!--` and `--&gt;` tags. Comments are not displayed in the web browser and are used for adding notes or explanations within your HTML code. Here's how to create an HTML comment:
+
+<div class="code"><i>
+&lt;!-- This is a comment. --&gt;
+</i></div>
+
+<br/>
+You can also use comments to temporarily remove or "comment out" a portion of HTML code:
+<br/>
+<br/>
+
+<div class="code">
+<i>
+<span class="comment">
+&lt;!--
+&lt;p&gt;This paragraph is commented out and won't be displayed in the browser.&lt;/p&gt;
+--&gt;
+</span></i>
+&lt;p&gt;This is a visible paragraph.&lt;/p&gt;
+</div>
+<br/>
+
+Comments are useful for documenting your code or for temporarily disabling code without deleting it.
+</p>
+   <div class="nextsec">
+   <h4>1/8</h4>
+
+<a href="tags.html">   
+   <button>Next »</button></a>
+   </div>
+   
+   
+   
+
+
+
+
+
+
+</div>
+<!--End of page-->
+<div class="footer">
+&copy;2023 CODEAFKAR,All Rights Reserved 
+</div>   
+   
+   
+
+
+
+
+
+<button class="searchbtn"onclick="popupScreen();">
+<i class="fa fa-plus fa-2x"style="color:#fff;">
+</i>
+</button>
+
+<div class="popup-b"id="id01">
+<div class="popup-topics">
+<h2>Choose Topics</h2>
+<hr/>
+<div class="popup-overflow">
+<a href="html.html"><button class="topic_btn">Basic structure of HTML</button></a>
+
+<a href="tags.html"><button class="topic_btn">HTML tags and attributes</button></a>
+
+
+<a href="sometag.html"><button class="topic_btn">Some HTML elements </button></a>
+
+<a href="frmttxt.html"><button class="topic_btn">Formatting text in HTML</button></a>
+
+
+
+<a href="table.html"><button class="topic_btn">Creating table in HTML</button></a>
+
+
+
+<a href="addmedia.html"><button class="topic_btn">Adding media to HTML</button></a>
+
+
+<a href="list.html"><button class="topic_btn">Creating list in HTML</button></a>
+
+
+
+<a href="formtag.html"><button class="topic_btn">Forms and input</button></a>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+      <nav>
+
+<a href="index.html">
+
+<i class="fa fa-home fa-2x"style="margin-top:14px;
+margin-left:10px;color:#fff;"></i>
+</a>
+<img src="logo.png"class="logo"id="logo"/>
+
+<input type="text"class="searchbar"id="search"placeholder="Search..."
+oninput="scrollToText(this.value);"/>
+
+
+<i class="fa fa-search"id="searchbtn"onclick="shwSrch();"></i>
+
+    </nav>
+
+
+
+</div>
+
+
+
+
+<div class="loadingdiv"id="loader">
+<center>
+<div class="loader">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="nav_script.js"></script>
+
+<script src="script.js">
+</script>
+
+
+
+
+  </body>
+
+</html>
+

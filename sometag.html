@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en"translate="no">
+  <head>
+  <title>Learn some useful tag of HTML</title>
+       <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="We are a website dedicated to helping people learn and master the art of web development.">
+
+    <meta name="author" content="Dr.Afkar Ahmad">
+
+   
+  <meta name="theme-color" content="#6c999d">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="style-b.css">
+
+  <link rel="stylesheet" href="nav_style.css">
+  
+  <link rel="stylesheet"href="loading.css">
+
+  
+  <link rel="icon" href="icon.png">
+  
+  
+  </head>    
+  <body>
+
+
+
+<div class="page"id="page">
+
+<br/>
+<h2>Some HTML tags:</h2>
+<h3>Headings:</h3>
+<p>
+To add headings to HTML, you can use the &lt;h1&gt; through &lt;h6&gt; tags, which represent six levels of headings, with &lt;h1&gt; being the highest level (most important) and &lt;h6&gt; the lowest. Here's how to use them:
+
+<div class="code">
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My
+   Webpage&lt;/h1&gt;
+    &lt;h2&gt;Welcome to My
+   Webpage&lt;/h2&gt;
+    &lt;h3&gt;Welcome to My
+   Webpage&lt;/h3&gt;
+    &lt;h4&gt;Welcome to My
+   Webpage&lt;/h4&gt;
+    &lt;h5&gt;Welcome to My
+   Webpage&lt;/h5&gt;
+    &lt;h6&gt;Welcome to My
+   Webpage&lt;/h6&gt;
+    
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<br/>
+<details>
+<summary>
+See output
+</summary>
+<div class="output">
+  <h1>Welcome to My
+   Webpage</h1>
+   
+  <h2>Welcome to My
+   Webpage</h2>
+   
+   <h3>Welcome to My
+   Webpage</h3>
+   
+  
+<h4>Welcome to My
+   Webpage</h4>
+   
+ <h5>Welcome to My
+   Webpage</h5>
+   
+   <h6>Welcome to My
+   Webpage</h6>
+   
+  
+   
+</div>
+
+</details>
+
+</p>
+
+<h3>Paragraph:</h3>
+
+<p>
+A paragraph is represented using the `&lt;p&gt;` element. It is used to define and structure text content within a web page. Here's how you can create a paragraph in HTML:
+
+<div class="code">
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+</div>
+
+Inside the `&lt;p&gt;` element, you place your text content, which can include plain text, links, images, or other HTML elements. Paragraphs are block-level elements, which means they typically start on a new line and create a vertical separation between content.
+
+For example, you can create multiple paragraphs like this:
+<div class="code">
+&lt;p&gt;This is the first paragraph.&lt;/p&gt;
+&lt;p&gt;This is the second paragraph.&lt;/p&gt;
+
+</div>
+
+This will display two separate paragraphs on your web page, each starting on a new line. Paragraphs are a fundamental part of HTML for organizing and formatting textual content.
+</p>
+<h3>&lt;meta&gt; tag:</h3>
+<p>
+
+The "&lt;meta&gt;" tag in HTML is used to provide metadata or additional information about a web page. This information helps browsers, search engines, and other web services understand and handle the page effectively. Here's a breakdown of the "&lt;meta&gt;" tag:
+<br/>
+<br/>
+1.Character Encoding: One common use of the "&lt;meta&gt;" tag is to specify the character encoding of the document. For example:
+
+ <div class="code">
+   &lt;meta charset="UTF-8"&gt;
+ </div>
+
+   This ensures that the browser interprets and displays the text content of the web page correctly, especially if it contains non-ASCII characters.
+<br/>
+<br/>
+
+2.Page Description: Another common use is to provide a brief description of the web page. This description is often used by search engines when displaying search results. For example:
+
+ <div class="code">
+   &lt;meta name="description" content="This is a brief description of the web page."&gt;
+  </div>
+<br/>
+<br/>
+
+3.Author Information: You can use the "&lt;meta&gt;" tag to specify the author of the web page:
+
+<div class="code">
+   &lt;meta name="author" content="John Doe"&gt;
+   
+</div>   
+<br/>
+<br/>
+
+4.Viewport Configuration: In responsive web design, the "&lt;meta&gt;" tag can be used to configure the viewport, ensuring that the page displays correctly on different devices. For example:
+
+ <div class="code">
+   &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+ 
+ </div>
+
+   This is important for mobile-friendly web design.
+<br/>
+<br/>
+
+5.Page Redirection/Refresh: The '&lt;meta&gt;' tag can also be used for page redirection or refresh. For instance, this tag will redirect the page to another URL after a specified time interval (in this case, 5 seconds):
+
+<div class="code">
+
+   &lt;meta http-equiv="refresh" 
+   content="5;url=https://
+   example.com"&gt;
+
+  </div>
+
+<br/>
+<br/>
+
+6.Keywords (deprecated): In the past, the "&lt;meta&gt;" tag was used to provide a list of keywords relevant to the content of the page. However, this practice has been largely deprecated, and search engines rely more on page content for indexing.
+<div class="r_texts">
+These are some common uses of the `&lt;meta&gt;` tag. It's placed within the `&lt;head&gt;` section of an HTML document, where you include metadata, document title, external stylesheets, and other information about your web page. Properly using `&lt;meta&gt;` tags can improve your website's accessibility, search engine optimization (SEO), and user experience.
+</div>
+</p>
+
+
+<h3>Hyper link:</h3>
+<p>
+To add hyperlinks (or simply links) in HTML, you use the `&lt; a&gt;` element, which stands for "anchor." Here's how to create a basic hyperlink:
+
+<div class="code">
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="viewport" 
+content="width=device-width, 
+initial-scale=1.0"&gt;
+
+    &lt;title&gt;HTML hyper link&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My
+   Webpage&lt;/h1&gt;
+    &lt;p&gt;Click the text to
+    open google&lt;/p&gt;
+    &lt;a href="https://www.go
+ogle.com"&gt; Visit Google &lt;/a&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<details>
+<summary>
+See output
+</summary>
+<div class="output">
+  
+  <h1>Welcome to My
+   Webpage</h1>
+    <p>Click the text to
+    open google</p>
+    <a href="https://www.go
+ogle.com"> Visit Google </a> 
+
+</div>
+
+</details>
+
+<h4>In the example above:</h4>
+
+- `&lt;a&gt;` is the anchor element.
+<br/>
+- `href` is the attribute that specifies the URL you want to link to. In this case, it's set to "https://www.google.com."
+<br/>
+- The text "Visit Google" between the opening `&lt;a&gt;` tag and closing `&lt;/a&gt;` tag is the clickable text that users will see.
+<br/>
+When a user clicks on the link, their web browser will navigate to the URL specified in the `href` attribute.
+<br/>
+You can also create internal links within the same web page by using the `#` symbol followed by an identifier (usually an HTML element's `id` attribute). For example:
+
+<div class="code">
+&lt;a href="#section2"&gt;Jump to Section 2&lt;/a&gt;
+
+</div>
+
+And somewhere else on the page:
+
+<div class="code">
+
+&lt;h2 id="section2"&gt;Section 2&lt;/h2&gt;
+
+</div>
+
+This creates an internal link that, when clicked, will scroll the user to the section with the `id` of "section2" on the same page.
+<br/>
+Remember that it's good practice to provide descriptive and meaningful text for your links to make them more user-friendly and accessible.
+<div class="r_texts">
+Try this example yourself once. (Write some text inside the section so the page can scroll.)
+</div>
+</p>
+<h3>Adding button:</h3>
+<p>
+The `&lt;button&gt;` element in HTML is used to create clickable buttons on a web page. When users click these buttons, they can trigger various actions or functions, like submitting forms, opening links, or executing JavaScript code. It's a fundamental element for adding interactivity to web pages.
+<h4>Example:</h4>
+<div class="code">
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Open Website Button&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Click the button to 
+    open another website&lt;/
+    h1&gt;
+
+<span class="comment">   &lt;!-- 
+A button that links to another 
+website --&gt;
+</span>
+    &lt;a href="https://
+www.instagram.com/dr.afkarahmad" 
+target="_blank"&gt;
+   &lt;button&gt;Open 
+   Website&lt;/button&gt;
+    &lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<details>
+<summary>
+See output
+</summary>
+<div class="output">
+  
+    <h1>Click the button to 
+    open another website</
+    h1>
+
+   <!-- 
+A button that links to another 
+website -->
+
+    <a href="https://
+www.instagram.com/dr.afkarahmad" 
+target="_blank">
+   <button>Open 
+   Website</button>
+    </a>
+</div>
+
+</details>
+
+</p>
+
+<h3>&lt;span&gt; element:</h3>
+<p>
+
+The '&lt;span&gt;' tag in HTML is used to style or manipulate small portions of text within a larger block of text or other HTML elements. It's often used for applying styles or JavaScript effects to specific words or phrases within a sentence or paragraph.
+
+<h4>Example:</h4>
+<div class="code">
+&lt;body&gt;
+
+&lt;p&gt;This is a &lt;span style="color: red; font-weight: bold;"&gt;highlighted&lt;/span&gt; word.&lt;/p&gt;
+&lt;/body&gt;
+
+</div>
+
+</p>
+  
+<h3>&lt;style&gt; tag:</h3>
+<p>
+The &lt;style&gt; tag in HTML is used to include inline CSS (Cascading Style Sheets) within an HTML document. CSS is a stylesheet language used for describing the presentation and visual styling of HTML elements on a web page. The &lt;style&gt; tag allows you to define CSS rules directly within the HTML file, which can then be applied to the HTML elements on that page.
+
+Here's a basic example of how the &lt;style&gt; tag is used:
+
+<div class="code">
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Style Tag Example&lt;/title&gt;
+    &lt;style&gt;
+        /* CSS rules go here */
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: navy;
+        }
+        p {
+            color: darkgreen;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph of text with custom styles.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+In this example:
+
+- The &lt;style&gt; element is placed within the &lt;head&gt; section of the HTML document.
+- Inside the &lt;style&gt; element, CSS rules are defined to style various HTML elements. For instance, it sets the background color for the &lt;body&gt;, changes the font for the entire page, and sets specific colors for &lt;h1&gt; and &lt;p&gt; elements.
+- These CSS rules are applied to the HTML elements within the &lt;body&gt; of the document, affecting their visual presentation.
+<div class="r_texts">
+We will learn CSS later.
+</div>
+</p>
+  <h3>&lt;script&gt; tag:</h3>
+  <p>
+  The script tag in HTML is used to embed or reference external JavaScript code within an HTML document. It allows you to add interactivity, manipulate the DOM (Document Object Model), and perform various functions on a web page.
+<div class="r_texts">
+We will learn JavaScript later.
+</div>
+  
+  </p>
+<h3>&lt;div&gt; element:</h3>
+<p>
+The `&lt;div&gt;` element in HTML is a versatile and fundamental container used to group and structure content on a web page. It's a block-level element, which means it typically starts on a new line and creates a visible block within the layout. The `&lt;div&gt;` element itself doesn't add any specific styling or visual changes; instead, it's used to apply CSS styles, add classes or IDs, and organize content for layout and styling purposes.
+
+Here's an example of how the `&lt;div&gt;` element is used in HTML:
+
+<div class="code">
+<pre>
+&lt;div&gt;
+    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+</div>
+You can create a box or container using the &lt;div&gt; tag in HTML. The &lt;div&gt; tag is commonly used to create boxes or containers for various purposes, such as grouping content, applying CSS styles, or organizing layout. You can control the appearance and dimensions of the box using CSS.
+
+Here's a basic example of how to create a box using a &lt;div&gt; element and apply some basic styling:
+
+<div class="code">
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Box Example&lt;/title&gt;
+    &lt;style&gt;
+        /* Styling for the box */
+        .box {
+            width: 200px;
+            height: 130px;
+            background-color: lightblue;
+            border: 2px solid navy;
+            padding: 10px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    <!-- The div element represents the box -->
+    &lt;div class="box"&gt;
+        &lt;h1&gt;This is a Box&lt;/h1&gt;
+        &lt;p&gt;Some content inside the box.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<details>
+<summary>
+See output
+</summary>
+<div class="output">
+<div style="width: 200px; height: 130px; background-color: lightblue; border: 2px solid navy; padding: 10px;">
+        <h1>This is a Box</h1>
+        <p>Some content inside the box.</p>
+</div>
+
+</details>
+
+</p>  
+
+<h3>&lt;iframe&gt; element:</h3>
+
+<p>
+
+An iframe (short for "inline frame") is an HTML element used to embed another document or web page within the current HTML document. It allows you to display content from a different source or website within a designated area on your web page. This can be useful for integrating external content like videos, maps, or other web applications seamlessly into your own web page.
+<br/>
+<br/>
+Here's a basic example of how to use an iframe in HTML:
+<div class="code">
+&lt;iframe src="https://www.example.com"&gt;&lt;/iframe&gt;
+</div>
+<br/>
+In this example, the content of the <kbd>"https://www.example.com"</kbd> web page would be displayed within the iframe on your web page. You can customize the iframe's size, border, and other attributes using HTML and CSS attributes.
+
+
+</p> 
+  
+  
+  
+  
+  
+  
+   <div class="nextsec">
+   <h4>3/8</h4>
+
+<a href="frmttxt.html">   
+   <button>Next »</button></a>
+   </div>
+   
+   
+   
+
+
+
+
+
+
+</div>
+<!--End of page-->
+<div class="footer">
+&copy;2023 CODEAFKAR,All Rights Reserved 
+</div>   
+   
+   
+
+
+
+
+
+<button class="searchbtn"onclick="popupScreen();">
+<i class="fa fa-plus fa-2x"style="color:#fff;">
+</i>
+</button>
+
+<div class="popup-b"id="id01">
+<div class="popup-topics">
+<h2>Choose Topics</h2>
+<hr/>
+<div class="popup-overflow">
+<a href="html.html"><button class="topic_btn">Basic structure of HTML</button></a>
+
+<a href="tags.html"><button class="topic_btn">HTML tags and attributes</button></a>
+
+
+<a href="sometag.html"><button class="topic_btn">Some HTML elements </button></a>
+
+<a href="frmttxt.html"><button class="topic_btn">Formatting text in HTML</button></a>
+
+
+
+<a href="table.html"><button class="topic_btn">Creating table in HTML</button></a>
+
+
+
+<a href="addmedia.html"><button class="topic_btn">Adding media to HTML</button></a>
+
+
+<a href="list.html"><button class="topic_btn">Creating list in HTML</button></a>
+
+
+
+<a href="formtag.html"><button class="topic_btn">Forms and input</button></a>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+      <nav>
+
+<a href="index.html">
+
+<i class="fa fa-home fa-2x"style="margin-top:14px;
+margin-left:10px;color:#fff;"></i>
+</a>
+<img src="logo.png"class="logo"id="logo"/>
+
+<input type="text"class="searchbar"id="search"placeholder="Search..."
+oninput="scrollToText(this.value);"/>
+
+
+<i class="fa fa-search"id="searchbtn"onclick="shwSrch();"></i>
+
+    </nav>
+
+
+
+</div>
+
+
+
+
+<div class="loadingdiv"id="loader">
+<center>
+<div class="loader">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="nav_script.js"></script>
+
+<script src="script.js">
+</script>
+
+
+
+
+  </body>
+
+</html>
+
